@@ -1,6 +1,6 @@
 # Final Project: Sports Medicine through Video Classification 
 
-![Tennis](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
+![Tennis](https://giphy.com/gifs/us-open-grand-slam-tennis-2014-Wq9BeqGtBY9r2.gif)
 
 ## Background
 
@@ -24,7 +24,9 @@ The goal of our project is to expand on the image classification model and utili
 ## Potential Next Steps
 
 
+
+
 > Final Project 
-          >> Farah
-          >> Pooja
-          >> Vaidy
+>> Farah
+>> Pooja
+>> Vaidy
