@@ -1,6 +1,6 @@
 # Final Project: Sports Medicine through Video Classification 
 
-![Tennis](data\backhand/0199.jpg) "Differentiating between Forehand & Backhand Tennis Movements")
+![Tennis](https://github.com/ffidai/Final_Project\data\backhand/0199.jpg) "Differentiating between Forehand & Backhand Tennis Movements")
 
 
 ## Background
