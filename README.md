@@ -1,7 +1,6 @@
 # Final Project: Sports Medicine through Video Classification 
 
-![Tennis](https://github.com/ffidai/Final_Project/blob/master/MD/tennis.jpg) "Differentiating between Forehand & Backhand Tennis Movements")
-
+![Tennis](https://github.com/ffidai/Final_Project/blob/master/MD/tennis.jpg)
 
 ## Background
 
@@ -20,11 +19,11 @@ Good technique and racquet grip is important to reduce the risk of the injury d
 
 The goal of our project is to expand on the image classification model and utilize video classification to differentiate between various sports movements. Ideally, the model can be used to help athletes, physical therapists, and doctors better understand how sports movements affects the body. An unintended use for this model can be to predict players' behavior and movements which can be used to help teams/sports insititutions select team rosters and viewers place players in fanatasy leagues and legal bets. 
 
-As a start, we will look at two basic tennis movements: forehand and backhand. In order to acheieve this, we will create a convulutional neural (CNN). 
+As a start, we will look at two basic tennis movements: forehand and backhand. In order to acheieve this, we will create a convulutional neural network (CNN). 
 
 ## Tools Used
 
-* Deep/Machine Learning: Tensorflow, Keras, ResNet 50 (Residual Networks)
+* Deep/Machine Learning: Tensorflow, Keras, ResNet 50 (Residual Networks), SKLearn
   * achieve image/video classification
 * Python & Flask
   * run the demo on a web page
@@ -36,12 +35,19 @@ As a start, we will look at two basic tennis movements: forehand and backhand. I
 
 ## The Process & Code Highlights
 
-
-
 ### Creating a key for tennis movements
-In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. Given our time and expertise we will classfiy any accuracy and probability testing above a failing grade (50%) to be succesful. 
+In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. The training video recorded the two movements separately; the test video recorded the two movements together. Given our time and expertise we will classify any accuracy and probability testing above a an average grade (~70%) to be succesful. 
 
 Our sample and testing clips were recorded in house by the team. The basic code is meant to be transferrable regardless of expert level, gender, and race. 
+
+![Model](https://github.com/ffidai/Final_Project/blob/master/MD/process_overview.png)
+
+
+### CNN
+
+![Model](https://github.com/ffidai/Final_Project/blob/master/MD/CNN.jpeg)
+
+
 
 ## Findings
 
