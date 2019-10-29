@@ -44,12 +44,16 @@ Our sample and testing clips were recorded in house by the team. The basic code 
 
 ### Predict: Forehand vs. Backhand
 
-Now that the test video has been 
+Now that the two training videos have been created, we will run various test videos. The test videos will be from a mix of players,specifically varying in race, gender, and expert level.
+
+The model will also create an exportable Excel file of movements to visualize the forehand and backhand count per player. This will assist to single out data outliers to improve the code and processes for future development. 
+
 ![Analysis](https://github.com/ffidai/Final_Project/blob/master/MD/analysis.png)
 
 ### CNN
 
 ![Model](https://github.com/ffidai/Final_Project/blob/master/MD/CNN.jpeg)
+https://medium.com/@RaghavPrabhu/understanding-of-convolutional-neural-network-cnn-deep-learning-99760835f148
 
 ## Tools Used
 
@@ -64,10 +68,11 @@ Now that the test video has been
   * house the data in a digestible format
 
 ## Demo
-
-
+Now we will showcase the model in a live demo. 
 
 ## Findings
+Classify the intersection of model running time & accuracy of the data of a usable, practical model given the output of the test videos. 
+
 * Pro Right
     * 1 , **_5_** & 25 epochs
 * Pro Left
@@ -75,8 +80,19 @@ Now that the test video has been
 * Non Pro right
     * 1 , 5 , **_25_** & 50 epochs
 
-
 ## Potential Next Steps
+We outlined an array of use cases for sports video classification. Key callouts below: 
+
+* Personalized coaching
+* Specialized sports medicine and physical therapy
+* Player analytics
+* Live, extractable data
+
+Building on the starter code:
+* Identify “waiting” player motions
+* Variations of forehand and backhand movements, add in others
+* Professional camera to achieve clear frames
+* Professional player for the training video to show clear, precise movements
 
 
 
