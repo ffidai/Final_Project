@@ -6,6 +6,8 @@
 
 Sports medicine is a branch of medicine that deals with physical fitness and the treatment and prevention of injuries related to sports and exercise. Although most sports teams have employed team physicians for many years, it is only since the late 20th century that sports medicine has emerged as a distinct field of health care.
 
+--talk about injuries here 
+
 * Shoulder Impingement
     * overhead shots and serving
 * Calf tears
@@ -21,6 +23,19 @@ The goal of our project is to expand on the image classification model and utili
 
 As a start, we will look at two basic tennis movements: forehand and backhand. In order to acheieve this, we will create a convulutional neural network (CNN). 
 
+## The Process & Code Highlights
+
+### Creating a key for tennis movements
+In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. The training video recorded the two movements separately; the test video recorded the two movements together. Given our time and expertise we will classify any accuracy and probability testing above a an average grade (~70%) to be succesful. 
+
+Our sample and testing clips were recorded in house by the team. The basic code is meant to be transferrable regardless of expert level, gender, and race. 
+
+![Model](https://github.com/ffidai/Final_Project/blob/master/MD/process_overview.png)
+
+### CNN
+
+![Model](https://github.com/ffidai/Final_Project/blob/master/MD/CNN.jpeg)
+
 ## Tools Used
 
 * Deep/Machine Learning: Tensorflow, Keras, ResNet 50 (Residual Networks), SKLearn
@@ -33,21 +48,9 @@ As a start, we will look at two basic tennis movements: forehand and backhand. I
 * HTML/CSS/Boostrap
   * house the data in a digestible format
 
-## The Process & Code Highlights
+![Model](https://github.com/ffidai/Final_Project/blob/master/MD/analysis.png)
 
-### Creating a key for tennis movements
-In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. The training video recorded the two movements separately; the test video recorded the two movements together. Given our time and expertise we will classify any accuracy and probability testing above a an average grade (~70%) to be succesful. 
-
-Our sample and testing clips were recorded in house by the team. The basic code is meant to be transferrable regardless of expert level, gender, and race. 
-
-![Model](https://github.com/ffidai/Final_Project/blob/master/MD/process_overview.png)
-
-
-### CNN
-
-![Model](https://github.com/ffidai/Final_Project/blob/master/MD/CNN.jpeg)
-
-
+## Demo
 
 ## Findings
 
