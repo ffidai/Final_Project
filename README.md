@@ -25,12 +25,28 @@ As a start, we will look at two basic tennis movements: forehand and backhand. I
 
 ## The Process & Code Highlights
 
-### Creating a key for tennis movements
+### Volumetrics: Creating a digestible image/video file through trial and error
+* Data
+    * Pro Right Hander, Pro Left Hander, Non Pro right hander
+* 2 clippings: backhand, forehand
+    * ~500 frames each
+    * 500*224*224*3 = 75 m * 2 clippings = 150 m data points  * 3 players = 450 m data points
+    * ~1 GB in size
+* Model
+    * 1, 5 , 25 and 50 epochs
+    * 7, 35, 175 and 360 mins to train and save each model
+
+### Train: Creating a key for tennis movements
 In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. The training video recorded the two movements separately; the test video recorded the two movements together. Given our time and expertise we will classify any accuracy and probability testing above a an average grade (~70%) to be succesful. 
 
 Our sample and testing clips were recorded in house by the team. The basic code is meant to be transferrable regardless of expert level, gender, and race. 
 
-![Model](https://github.com/ffidai/Final_Project/blob/master/MD/process_overview.png)
+![Process](https://github.com/ffidai/Final_Project/blob/master/MD/process_overview.png)
+
+### Predict: Forehand vs. Backhand
+
+Now that the test video has been 
+![Analysis](https://github.com/ffidai/Final_Project/blob/master/MD/analysis.png)
 
 ### CNN
 
@@ -48,11 +64,17 @@ Our sample and testing clips were recorded in house by the team. The basic code 
 * HTML/CSS/Boostrap
   * house the data in a digestible format
 
-![Model](https://github.com/ffidai/Final_Project/blob/master/MD/analysis.png)
-
 ## Demo
 
+
+
 ## Findings
+* Pro Right
+    * 1 , **5** & 25 epochs
+* Pro Left
+    * 1 , 5 epochs
+* Non Pro right
+    * 1 , 5 , **25** & 50 epochs
 
 
 ## Potential Next Steps
@@ -60,7 +82,8 @@ Our sample and testing clips were recorded in house by the team. The basic code 
 
 
 ----
-> Final Project 
->> Farah
->> Pooja
->> Vaidy
+Farah
+----
+Pooja
+----
+Vaidy
