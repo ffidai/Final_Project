@@ -6,7 +6,7 @@
 
 Sports medicine is a branch of medicine that deals with physical fitness and the treatment and prevention of injuries related to sports and exercise. Although most sports teams have employed team physicians for many years, it is only since the late 20th century that sports medicine has emerged as a distinct field of health care.
 
---talk about injuries here 
+Ideally, sports video classification will identify common errors during practice and correct them, replacing the need for a physical coach.
 
 * Shoulder Impingement
     * overhead shots and serving
@@ -19,11 +19,10 @@ Good technique and racquet grip is important to reduce the risk of the injury d
 
 ## Goal
 
-The goal of our project is to expand on the image classification model and utilize video classification to differentiate between various sports movements. Ideally, the model can be used to help athletes, physical therapists, and doctors better understand how sports movements affects the body. An unintended use for this model can be to predict players' behavior and movements which can be used to help teams/sports insititutions select team rosters and viewers place players in fanatasy leagues and legal bets. 
-
-As a start, we will look at two basic tennis movements: forehand and backhand. In order to acheieve this, we will create a convulutional neural network (CNN). 
+The goal of our project is to expand on the image classification model and utilize video classification to differentiate between various sports movements. Ideally, the model can be used to help athletes, physical therapists, and doctors better understand how sports movements affects the body. An unintended use for this model can be to predict players' behavior and movements which can be used to help teams/sports insititutions select team rosters and viewers/fans place players in fanatasy leagues and legal bets. 
 
 ## The Process & Code Highlights
+As a start, we will look at two basic tennis movements: forehand and backhand. In order to acheieve this, we will create a convulutional neural network (CNN). 
 
 ### Volumetrics: Creating a digestible image/video file through trial and error
 * Data
@@ -70,20 +69,16 @@ Now that the test video has been
 
 ## Findings
 * Pro Right
-    * 1 , **5** & 25 epochs
+    * 1 , **_5_** & 25 epochs
 * Pro Left
     * 1 , 5 epochs
 * Non Pro right
-    * 1 , 5 , **25** & 50 epochs
+    * 1 , 5 , **_25_** & 50 epochs
 
 
 ## Potential Next Steps
 
 
 
-----
-Farah
-----
-Pooja
-----
-Vaidy
+____
+Farah, Pooja, Vaidy
