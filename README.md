@@ -90,7 +90,7 @@ We outlined an array of use cases for sports video classification. Key callouts 
 
 Building on the starter code:
 * Identify “waiting” player motions
-* Variations of forehand and backhand movements, add in others
+* Variations of forehand and backhand movements, add in other key movements
 * Professional camera to achieve clear frames
 * Professional player for the training video to show clear, precise movements
 
