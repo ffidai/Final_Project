@@ -6,7 +6,7 @@
 
 Sports medicine is a branch of medicine that deals with physical fitness and the treatment and prevention of injuries related to sports and exercise. Although most sports teams have employed team physicians for many years, it is only since the late 20th century that sports medicine has emerged as a distinct field of health care.
 
-Ideally, sports video classification will identify common errors during practice and correct them, replacing the need for a physical coach.
+Ideally, sports video classification will identify common errors during practice and correct them, supplementing a physical coach.
 
 * Shoulder Impingement
     * overhead shots and serving
@@ -29,14 +29,14 @@ As a start, we will look at two basic tennis movements: forehand and backhand. I
     * Pro Right Hander, Pro Left Hander, Non Pro right hander
 * 2 clippings: backhand, forehand
     * ~500 frames each
-    * 500*224*224*3 = 75 m * 2 clippings = 150 m data points  * 3 players = 450 m data points
+    * 500 * 224 * 224 * 3 = 75 m * 2 clippings = 150 m data points  * 3 players = 450 m data points
     * ~1 GB in size
 * Model
     * 1, 5 , 25 and 50 epochs
     * 7, 35, 175 and 360 mins to train and save each model
 
 ### Train: Creating a key for tennis movements
-In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. The training video recorded the two movements separately; the test video recorded the two movements together. Given our time and expertise we will classify any accuracy and probability testing above a an average grade (~70%) to be succesful. 
+In order to create a successful video classifier, we had to create sample videos to recognize the two different movements and then use test videos to see if our code is sound. The training video recorded the two movements separately; the test video recorded the two movements together. Given our time and expertise we will classify any accuracy and probability testing above at an average accuracy (~70%) to be succesful. 
 
 Our sample and testing clips were recorded in house by the team. The basic code is meant to be transferrable regardless of expert level, gender, and race. 
 
@@ -46,7 +46,7 @@ Our sample and testing clips were recorded in house by the team. The basic code 
 
 Now that the two training videos have been created, we will run various test videos. The test videos will be from a mix of players,specifically varying in race, gender, and expert level.
 
-The model will also create an exportable Excel file of movements to visualize the forehand and backhand count per player. This will assist to single out data outliers to improve the code and processes for future development. 
+The model will also create an exportable Excel file of movements to visualize the forehand and backhand count per player. This will help single out outliers in our data to improve the code and processes for future development. 
 
 ![Analysis](https://github.com/ffidai/Final_Project/blob/master/MD/analysis.png)
 
