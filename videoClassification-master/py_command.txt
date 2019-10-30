@@ -1,0 +1,20 @@
+python predict_video.py -m model/activity_gpu.model -l model/lb.pickle -i example_clips/cyclone_movie.mp4 -o output/cyclon_movie_output.avi -s 10
+
+
+python predict_video.py -m model -l model/lb.pickle -i example_clips/IMG_0527.MOV -o output/IMG_0527_output1.MOV -s 10
+
+
+python predict_video.py -m model -l model/lb.pickle -i example_clips/IMG_0527.MOV -o output/IMG_0527_output1.MOV -s 30
+
+
+python train.py --dataset data --model model --label-bin model/lb.pickle --epochs 25
+
+
+usw this
+
+python predict_video.py --model model --label-bin model/lb.pickle --input example_clips/IMG_0527.MOV  -s 30
+
+
+python predict_video.py -m modelAllDataRotatedRightEpoch1 -l modelAllDataRotatedRightEpoch1/lb.pickle -i example_clips/RightTest.MOV -o output/RightTest1.MOV -s 30
+
+python predict_video.py -m model -l model/lb.pickle -i example_clips/RightTest.MOV -s 30

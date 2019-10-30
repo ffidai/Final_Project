@@ -1,0 +1,7 @@
+python predict_video.py -m model/activity_gpu.model -l model/lb.pickle -i example_clips/cyclone_movie.mp4 -o output/cyclon_movie_output.avi -s 10
+
+
+python predict_video.py -m model -l model/lb.pickle -i example_clips/IMG_0527.MOV -o output/IMG_0527_output1.MOV -s 10
+
+
+python predict_video.py -m model -l model/lb.pickle -i example_clips/IMG_0527.MOV -o output/IMG_0527_output1.MOV -s 30

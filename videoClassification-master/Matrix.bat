@@ -1,0 +1,1 @@
+python predict_video.py -m model -l model/lb.pickle -i example_clips/Roger_Federer.MP4 -o output/Roger_Federer_output.MP4 -s 30

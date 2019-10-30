@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Video Classification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript"></script>
+</head>
+<body style="background-color: rgb(51, 157, 199)";>
+<div class="jumbotron text-center" >
+      <h1>Tennis Video Classification</h1>
+      <p>Project Team: Farah, Pooja, Vaidy</p> 
+</div>
+<div class="jumbotron text-center">
+  <form name = "passdata" action="." method="POST">
+
+    <label for="model">Select a Model</label>
+    <select placeholder="Enter a Model" name = "model1">                              
+        <option value="model_non_pro_epochs25">model_non_pro_epochs5</option>
+        <option value="model_pro_right_epochs5">model_pro_right_epochs5</option>                 
+    </select>
+    <label for="testclip">Choose the test Video</label>
+    <select placeholder="Choose the test Video" name = "video">  
+        <option value="NonPro.MOV">NonPro.MOV</option>
+        <option value="ProRightTest.MOV">ProRightTest.MOV</option>                 
+    </select>
+
+    <input type="submit" value = "submit">
+</div>
+
+<!-- Container 1, Model 1, Epoch 1 Starts -->
+
+<h1 style="text-align: center;">Select Model and Video to Run the Predict Video</h1>
+<div class="container text-left" >
+  <div class="row">
+      <div class="col-md-12">   
+        
+          <h2>Choose any Training Model</h2>       
+          <script type="text/javascript" >
+            var model
+            function getfolder1(e) {
+              var files = e.target.files;
+              var path = files[0].webkitRelativePath;
+              var Folder = path.split("/");
+              alert(Folder[0]);
+              model = Folder[0];
+              console.log(model);
+              return model
+           }
+          </script>          
+      <input type="file" id="flup" onchange="getfolder1(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+              
+      </form>
+          
+    </div>  
+  </br>
+     <div class="col-md-12">
+      <h2>Choose any Video as Input</h2> 
+          <script type="text/javascript">
+            var video;
+            var foldername;
+            function getfolder2(e) {
+            var files = e.target.files;
+            var path = files[0].webkitRelativePath;
+            var Folder = path.split("/");
+            alert(Folder[0]);
+            foldername=Folder[0];
+            video=Folder[1].split(".")[0];
+            console.log(foldername);
+            console.log(video);
+            return foldername, video;
+                  
+        }
+      </script> 
+                 
+      <input type="file" id="flup" onchange="getfolder2(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+       
+    </form>
+    </div>
+    </br>
+    <div>
+        <p> </br></br></br></br> </br></p>
+    </div>
+      <div class="col-md-12">
+        
+          <button type="button" onclick="RUN(model,foldername,video)">  GENERATE VIDEO  </button>  
+      </div>
+    <div>
+      <p>  </br></p>
+    </div>
+      <div class="col-md-12">   
+          
+          <video id= "ANSWER" width="1070" height="650" controls onchange="RUN()">    
+            <script type="text/javascript" language="javascript">
+            var $ANSWER;
+            function RUN(model,foldername,video)
+            {
+              $ANSWER = video+"_"+model+"_output.mp4";
+              //let runcommand = "python predict_video.py -m "+model+"-l "+model+"/lb.pickle -i "+foldername+"/"+video+" -o output/"+video+"_output.MP4 -s 30"
+              let runcommand ="python predict_video.py -m "+model+" -l"+ model +"/lb.pickle -i "+foldername+"/"+$ANSWER+" -s 30"
+                           
+              console.log($ANSWER);
+              document.getElementById("ANSWER").src = "C:/Users/cheta/Farah Fidai/Final_Project/videoClassification-master/output/"+ $ANSWER
+              console.log(document.getElementById("ANSWER").src);
+            }            
+            </script>
+          
+    </div>
+  
+  </div>   
+</div>
+
+<!-- Container 1, Model 1, Epoch 1 Ends -->
+
+
+
+</body>
+</html>
